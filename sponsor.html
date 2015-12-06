@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sponsor an artist</title>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+      <style>
+         body {
+         background-image: url("http://www.danielleemusicstudio.com/wp-content/uploads/2014/05/simple-background-12.jpg");
+         background-color: #cccccc;
+         }
+      </style>
+      <img src="http://images.cooltext.com/4514779.png" width = "225px"> 
+      <style>
+         ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         }
+         li a {
+         display: block;
+         width: 60px;
+         background-color: "black"; /*#dddddd;*/
+         }
+      </style>
+
+      <script>
+      $(document).ready(function(){
+          $("#songpicture").hover(
+            function(){ $("#artist").attr("width", "600"); },
+            function(){ $("#artist").attr("width", "285"); }
+          );
+      });
+      </script>
+
+    </head>
+<body>
+    <div id="topsong">
+      <img src="http://images.cooltext.com/4517257.png">
+   </div>
+
+   <div id="songpicture">
+      <img id="artist" src="https://cbskroq2.files.wordpress.com/2011/07/adele-rolling_in_the_deep.jpg?w=420">
+   </div>
+   
+
+    <div id="trigger"> 
+        <a id="nav-toggle">
+            <span></span>
+        </a>
+    </div>
+   <div id="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sponsor.html">Top Song</a></li>
+        <li><a href="onesong.html">About</a></li>      
+      </ul>
+    </div>
+    <script>
+      $( "li" ).hover(
+        function() {
+          $(this).css("background-color", "blue");
+          }, function(){
+          $(this).css("background-color", "transparent"); 
+          }
+      );
+       
+      $( "li.fade" ).hover(function() {
+        $( this ).fadeOut( 100 );
+        $( this ).fadeIn( 500 );
+      });
+    </script>
+    <script>
+   $("#trigger").click(function() {
+      $("#menu").toggleClass("active");
+    });
+
+    $("#trigger").click(function() {
+      $("#trigger").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#songpicture".attr(width, 500px);
+      });
+    </script>
+ </body>
+ </html> 
+    
